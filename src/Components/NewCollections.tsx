@@ -4,7 +4,7 @@ import Item from "./Item";
 
 const NewCollections = () => {
 	return (
-		<div className="new-collections flex flex-col items-center gap-2.5 h-[90vh]">
+		<div className="new-collections flex flex-col items-center gap-2.5 mb-24">
 			<h1 className="uppercase text-gray-800 text-5xl font-semibold ">
 				new-collections in womens
 			</h1>
