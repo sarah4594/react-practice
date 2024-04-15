@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../Assets/logo.png";
 import cart_icon from "../Assets/cart_icon.png";
 
 const Navbar = () => {
+	const [menu, setMenu] = useState("shop");
+
 	return (
 		<div className="flex justify-around p-4 shadow-sm">
 			<div className="flex items-center gap-2.5">
@@ -10,18 +12,57 @@ const Navbar = () => {
 				<p className="text-gray-800 text-4xl font-semibold">SHOPPER</p>
 			</div>
 			<ul className="flex items-center gap-12 list-none text-gray-600 text-xl">
-				<li className="flex flex-col items-center justify-center gap-1 cursor-pointer">
+				<li
+					onClick={() => {
+						setMenu("shop");
+					}}
+					className="flex flex-col items-center justify-center gap-1 cursor-pointer"
+				>
 					Shop
-					<hr className="border-none w-4/5 h-1 rounded-lg bg-red-300" />
+					{menu === "shop" ? (
+						<hr className="border-none w-4/5 h-1 rounded-lg bg-red-300" />
+					) : (
+						<></>
+					)}
 				</li>
-				<li className="flex flex-col items-center justify-center gap-1 cursor-pointer">
+				<li
+					onClick={() => {
+						setMenu("mens");
+					}}
+					className="flex flex-col items-center justify-center gap-1 cursor-pointer"
+				>
 					Men
+					{menu === "mens" ? (
+						<hr className="border-none w-4/5 h-1 rounded-lg bg-red-300" />
+					) : (
+						<></>
+					)}
 				</li>
-				<li className="flex flex-col items-center justify-center gap-1 cursor-pointer">
+				<li
+					onClick={() => {
+						setMenu("womens");
+					}}
+					className="flex flex-col items-center justify-center gap-1 cursor-pointer"
+				>
 					Women
+					{menu === "womens" ? (
+						<hr className="border-none w-4/5 h-1 rounded-lg bg-red-300" />
+					) : (
+						<></>
+					)}
 				</li>
-				<li className="flex flex-col items-center justify-center gap-1 cursor-pointer">
+				<li
+					onClick={() => {
+						setMenu("kids");
+					}}
+					className="flex flex-col items-center justify-center gap-1 cursor-pointer"
+				>
 					Kids
+					{menu === "kids" ? (
+						<hr className="border-none w-4/5 h-1 rounded-lg bg-red-300" />
+					) : (
+						<></>
+					)}
 				</li>
 			</ul>
 			<div className="flex items-center gap-11 ">
