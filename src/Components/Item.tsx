@@ -7,10 +7,10 @@ const Item = ({ id, name, image, new_price, old_price }) => {
 			<p className="my-1.5 mx-0">{name}</p>
 			<div className="items-prices flex gap-5">
 				<div className="item-price-new text-gray-600 text-lg font-semibold">
-					{new_price}
+					${new_price}
 				</div>
 				<div className="items-price-old text-gray-400 text-lg font-normal line-through">
-					{old_price}
+					${old_price}
 				</div>
 			</div>
 		</div>
