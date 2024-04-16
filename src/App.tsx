@@ -5,6 +5,7 @@ import ShopCategory from "./Pages/ShopCategory";
 import Product from "./Pages/Product";
 import Cart from "./Pages/Cart";
 import LoginSignUp from "./Pages/LoginSignUp";
+import Footer from "./Components/Footer";
 
 function App() {
 	return (
@@ -23,6 +24,7 @@ function App() {
 					<Route path="login" element={<LoginSignUp />} />
 				</Routes>
 			</BrowserRouter>
+			<Footer />
 		</>
 	);
 }
