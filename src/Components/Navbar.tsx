@@ -28,12 +28,12 @@ const Navbar = () => {
 				</li>
 				<li
 					onClick={() => {
-						setMenu("mens");
+						setMenu("men");
 					}}
 					className="flex flex-col items-center justify-center gap-1 cursor-pointer"
 				>
-					<Link to="/mens">Men</Link>
-					{menu === "mens" ? (
+					<Link to="/men">Men</Link>
+					{menu === "men" ? (
 						<hr className="border-none w-4/5 h-1 rounded-lg bg-red-300" />
 					) : (
 						<></>
@@ -41,12 +41,12 @@ const Navbar = () => {
 				</li>
 				<li
 					onClick={() => {
-						setMenu("womens");
+						setMenu("women");
 					}}
 					className="flex flex-col items-center justify-center gap-1 cursor-pointer"
 				>
-					<Link to="/womens">Womens</Link>
-					{menu === "womens" ? (
+					<Link to="/women">Women</Link>
+					{menu === "women" ? (
 						<hr className="border-none w-4/5 h-1 rounded-lg bg-red-300" />
 					) : (
 						<></>
@@ -54,12 +54,12 @@ const Navbar = () => {
 				</li>
 				<li
 					onClick={() => {
-						setMenu("kids");
+						setMenu("kid");
 					}}
 					className="flex flex-col items-center justify-center gap-1 cursor-pointer"
 				>
-					<Link to="/kids">Kids</Link>
-					{menu === "kids" ? (
+					<Link to="/kid">Kids</Link>
+					{menu === "kid" ? (
 						<hr className="border-none w-4/5 h-1 rounded-lg bg-red-300" />
 					) : (
 						<></>
