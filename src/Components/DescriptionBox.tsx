@@ -11,7 +11,7 @@ const DescriptionBox = () => {
 					Reviews (122)
 				</div>
 			</div>
-			<div className="descriptionBox-description flex flex-col gap-6 border borger-gray-100 p-12 pb-44">
+			<div className="descriptionBox-description flex flex-col gap-6 border border-gray-100 p-12 pb-44">
 				<p>
 					An e-commerce website is an online platform that fascilitates buying
 					and selling of products or services over the internet and serves as a
