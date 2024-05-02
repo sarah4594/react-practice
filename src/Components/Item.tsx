@@ -5,7 +5,7 @@ const Item = ({ id, name, image, new_price, old_price }) => {
 	return (
 		<div className="item w-80 hover:scale-105 duration-600">
 			<Link to={`/product/${id}`}>
-				<img src={image} />
+				<img onClick={window.scrollTo(0, 0)} src={image} />
 			</Link>
 			<p className="my-1.5 mx-0">{name}</p>
 			<div className="items-prices flex gap-5">
